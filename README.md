@@ -10,6 +10,10 @@ This is a relatively simple translation tool at its current stage. It takes in a
 All the source code is currently under main. An example translation file for the c programming language that goes from english to french is also available.
 To test this, you can run this against any c program. 
 
+To do so, first simply compile it with your compiler of choice. e.g. `g++ main.cc -o translate`
+Then after compilation, you can run something like this: `./translate c-en-fr test.c`
+Where "test.c" is a c program.
+
 For example, a c simple c program that looks like this:
 ```
 int main() {
@@ -22,3 +26,5 @@ ent principale() {
   retourne 0;
 }
 ```
+
+This system can be easily extendable to more languages by simply adding more of these translation files.
